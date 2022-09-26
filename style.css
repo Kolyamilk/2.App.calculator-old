@@ -1,0 +1,180 @@
+* {
+    border-radius: 2%;
+}
+
+body {
+    background-color: rgb(206, 231, 253);
+}
+
+.container {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+
+}
+
+.main-calculator {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(191, 191, 191);
+    border: 5px solid rgb(116, 116, 116);
+    width: 800px;
+    height: 800px;
+}
+
+#answer {
+    font-size: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    border: 2px grey solid;
+    width: 90%;
+    height: 10%;
+    background-color: rgb(217, 217, 217);
+
+
+}
+
+#operator,
+#operatorRavno {
+    font-size: 30px;
+    font-weight: 900;
+    color: orangered;
+}
+
+#firstNumber,
+#secondNumber {
+    display: flex;
+    margin: 1px;
+    width: 30%;
+    justify-content: center;
+
+}
+
+#result {
+    width: 35%;
+
+}
+
+.topMenu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    width: 80%;
+    height: 10%;
+}
+
+#topMenu-plus,
+#topMenu-ravno,
+#topMenu-reset,
+#topMenu-minus,
+#topMenu-delete,
+#topMenu-multi {
+    display: flex;
+    width: 20%;
+    height: 100%;
+    border: 2px solid grey;
+    margin: 5px;
+    font-size: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.numbers {
+    margin-top: 30px;
+    border: 3px grey solid;
+    width: 70%;
+    height: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#number-one,
+#number-two,
+#number-three,
+#number-four,
+#number-five,
+#number-six,
+#number-seven,
+#number-eight,
+#number-nine,
+#number-zero,
+#number-dot,
+#number-percent {
+    border: 2px solid grey;
+    margin: 5px;
+    display: flex;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+    height: 20%;
+
+}
+
+.numbers>:hover {
+    background-color: rgb(229, 229, 229);
+}
+
+.topMenu>:hover {
+    background-color: rgb(229, 229, 229);
+
+}
+
+@media (max-width:1000px) {
+
+    #number-one,
+    #number-two,
+    #number-three,
+    #number-four,
+    #number-five,
+    #number-six,
+    #number-seven,
+    #number-eight,
+    #number-nine,
+    #number-zero,
+    #number-dot,
+    #number-percent {
+        border: 2px solid grey;
+        margin: 5px;
+        display: flex;
+        font-size: 60px;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 20%;
+        height: 20%;
+
+    }
+
+    #topMenu-plus,
+    #topMenu-ravno,
+    #topMenu-reset,
+    #topMenu-minus,
+    #topMenu-delete,
+    #topMenu-multi {
+        display: flex;
+        width: 20%;
+        height: 100%;
+        border: 2px solid grey;
+        margin: 5px;
+        font-size: 60px;
+        align-items: center;
+        justify-content: center;
+    }
+}
